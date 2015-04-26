@@ -20,15 +20,15 @@
     under the License.
 -->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-    	<script type="text/javascript" src="js/jspdf.min.js"></script>
-        <script type="text/javascript">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="js/jspdf.min.js"></script>
+    <script type="text/javascript">
             var pictureSource;   // picture source
             var destinationType; // sets the format of returned value 
 
@@ -58,7 +58,7 @@
               // The inline CSS rules are used to resize the image
               //
               smallImage.src = "data:image/jpeg;base64," + imageData;
-            }
+          }
 
             // Called when a photo is successfully retrieved
             //
@@ -78,7 +78,7 @@
               // The inline CSS rules are used to resize the image
               //
               smallImage.src = imageData;
-            }
+          }
 
             // Called when a photo is successfully retrieved
             //
@@ -98,18 +98,18 @@
               // The inline CSS rules are used to resize the image
               //
               largeImage.src = imageURI;
-            }
+          }
 
             // A button will call this function
             //
             function capturePhotoWithData() {
               // Take picture using device camera and retrieve image as base64-encoded string
               navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50 });
-            }
+          }
 
-            function capturePhotoWithFile() {
-                navigator.camera.getPicture(onPhotoFileSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
-            }
+          function capturePhotoWithFile() {
+            navigator.camera.getPicture(onPhotoFileSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
+        }
 
             // A button will call this function
             //
@@ -118,34 +118,34 @@
               navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50, 
                 destinationType: destinationType.FILE_URI,
                 sourceType: source });
-            }
+          }
 
             // Called if something bad happens.
             // 
             function onFail(message) {
               alert('Failed because: ' + message);
-            }
-        </script>
-        <title>Hello World</title>
-    </head>
-    <body>
+          }
+          </script>
+          <title>Hello World</title>
+      </head>
+      <body>
         <div class="app">
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
-                <button onclick="capturePhotoWithData();">Capture Photo With Image Data</button> <br>
-                <button onclick="capturePhotoWithFile();">Capture Photo With Image File URI</button> <br>
-                <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
-                <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
-                <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
-                <img style="display:none;" id="largeImage" src="" />
+            <button onclick="capturePhotoWithData();">Capture Photo With Image Data</button> <br>
+            <button onclick="capturePhotoWithFile();">Capture Photo With Image File URI</button> <br>
+            <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
+            <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
+            <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+            <img style="display:none;" id="largeImage" src="" />
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            app.initialize();
+        app.initialize();
         </script>
     </body>
-</html>
+    </html>
