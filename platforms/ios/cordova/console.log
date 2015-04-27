@@ -1,0 +1,224 @@
+2015-04-27 16:15:14.138 JSPDF App[6521:554204] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Data/Application/1ED16355-4AD9-468E-B560-49D97BBDAC1B/Library/Cookies/Cookies.binarycookies
+2015-04-27 16:15:14.603 JSPDF App[6521:554204] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-27 16:15:14.603 JSPDF App[6521:554204] Multi-tasking -> Device: YES, App: YES
+2015-04-27 16:15:14.631 JSPDF App[6521:554204] Unlimited access to network resources
+2015-04-27 16:15:14.646 JSPDF App[6521:554204] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-27 16:15:15.211 JSPDF App[6521:554204] [CDVTimer][file] 20.864010ms
+2015-04-27 16:15:15.212 JSPDF App[6521:554204] [CDVTimer][TotalPluginStartup] 21.142006ms
+2015-04-27 16:15:15.539 JSPDF App[6521:554204] Resetting plugins due to page load.
+2015-04-27 16:15:16.058 JSPDF App[6521:554204] Finished load of: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Bundle/Application/7CFCB110-570D-4230-BE7D-E69A61EDC747/JSPDF%20App.app/www/index.html
+2015-04-27 16:15:31.738 JSPDF App[6521:554346] Camera.getPicture: source type 1 not available.
+2015-04-27 16:15:34.450 JSPDF App[6521:554468] Camera.getPicture: source type 1 not available.
+2015-04-27 16:15:42.354 JSPDF App[6521:554204] Resetting plugins due to page load.
+2015-04-27 16:15:42.449 JSPDF App[6521:554204] Finished load of: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Data/Application/1ED16355-4AD9-468E-B560-49D97BBDAC1B/Documents/test.pdf
+invalid stream length 63558; should be 95113.
+2015-04-27 16:22:04.698 JSPDF App[6866:557396] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Data/Application/5753D9BA-A55C-4188-8A71-A741222652DA/Library/Cookies/Cookies.binarycookies
+2015-04-27 16:22:04.857 JSPDF App[6866:557396] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-27 16:22:04.858 JSPDF App[6866:557396] Multi-tasking -> Device: YES, App: YES
+2015-04-27 16:22:04.861 JSPDF App[6866:557396] Unlimited access to network resources
+2015-04-27 16:22:04.867 JSPDF App[6866:557396] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-27 16:22:04.895 JSPDF App[6866:557396] DiskImageCache: Could not resolve the absolute path of the old directory.
+2015-04-27 16:22:05.007 JSPDF App[6866:557396] [CDVTimer][file] 4.152000ms
+2015-04-27 16:22:05.007 JSPDF App[6866:557396] [CDVTimer][TotalPluginStartup] 4.351974ms
+2015-04-27 16:22:05.142 JSPDF App[6866:557396] Resetting plugins due to page load.
+2015-04-27 16:22:05.464 JSPDF App[6866:557396] Finished load of: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Bundle/Application/9EF3AABD-E8DC-4685-B19B-1F22BB11F606/JSPDF%20App.app/www/index.html
+2015-04-27 16:27:40.460 JSPDF App[7235:561297] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Data/Application/00754976-55FB-4E34-9F53-D2820476B2D5/Library/Cookies/Cookies.binarycookies
+2015-04-27 16:27:40.570 JSPDF App[7235:561297] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-27 16:27:40.571 JSPDF App[7235:561297] Multi-tasking -> Device: YES, App: YES
+2015-04-27 16:27:40.577 JSPDF App[7235:561297] Unlimited access to network resources
+2015-04-27 16:27:40.583 JSPDF App[7235:561297] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-27 16:27:40.758 JSPDF App[7235:561297] [CDVTimer][file] 6.838977ms
+2015-04-27 16:27:40.759 JSPDF App[7235:561297] [CDVTimer][TotalPluginStartup] 7.162988ms
+2015-04-27 16:27:40.888 JSPDF App[7235:561297] Resetting plugins due to page load.
+2015-04-27 16:27:41.185 JSPDF App[7235:561297] Finished load of: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Bundle/Application/1DAE06CC-158F-4D4D-9627-03A183FC3CF6/JSPDF%20App.app/www/index.html
+2015-04-27 16:27:47.400 JSPDF App[7235:561297] THREAD WARNING: ['Notification'] took '26.065918' ms. Plugin should use a background thread.
+2015-04-27 16:27:47.553 JSPDF App[7235:561297] -[__NSCFNumber length]: unrecognized selector sent to instance 0x79f03e80
+2015-04-27 16:27:47.629 JSPDF App[7235:561297] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber length]: unrecognized selector sent to instance 0x79f03e80'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x00301746 __exceptionPreprocess + 182
+	1   libobjc.A.dylib                     0x02c62a97 objc_exception_throw + 44
+	2   CoreFoundation                      0x00309705 -[NSObject(NSObject) doesNotRecognizeSelector:] + 277
+	3   CoreFoundation                      0x00250287 ___forwarding___ + 1047
+	4   CoreFoundation                      0x0024fe4e _CF_forwarding_prep_0 + 14
+	5   UIKit                               0x008e2ffe -[UILabel _ensureBaselineMetricsReturningBounds] + 135
+	6   UIKit                               0x008e31f0 -[UILabel _firstBaselineOffsetFromTop] + 46
+	7   UIKit                               0x00e3b870 -[UIView(AdditionalLayoutSupport) nsli_lowerAttribute:intoExpression:withCoefficient:forConstraint:] + 1183
+	8   Foundation                          0x0284703d lower_1_attribute + 194
+	9   Foundation                          0x02846ab8 -[NSLayoutConstraint _lowerIntoExpression:reportingConstantIsRounded:] + 99
+	10  Foundation                          0x0283b89a -[NSLayoutConstraint _addToEngine:integralizationAdjustment:mutuallyExclusiveConstraints:] + 97
+	11  Foundation                          0x028468a2 -[NSLayoutConstraint _addToEngine:] + 56
+	12  UIKit                               0x00e38c5d __57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke_2 + 536
+	13  Foundation                          0x0284b077 -[NSISEngine withBehaviors:performModifications:] + 150
+	14  Foundation                          0x0284e5cf -[NSISEngine withAutomaticOptimizationDisabled:] + 48
+	15  UIKit                               0x00e3912b -[UIView(AdditionalLayoutSupport) _withAutomaticEngineOptimizationDisabledIfEngineExists:] + 64
+	16  UIKit                               0x00e38a2e __57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke + 482
+	17  UIKit                               0x00e39133 -[UIView(AdditionalLayoutSupport) _withAutomaticEngineOptimizationDisabledIfEngineExists:] + 72
+	18  UIKit                               0x00e38823 -[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:] + 216
+	19  UIKit                               0x00e38746 -[UIView(AdditionalLayoutSupport) _parentalLayoutEngineDidChangeTo:] + 57
+	20  UIKit                               0x00e38b36 __57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke_2 + 241
+	21  Foundation                          0x0284b077 -[NSISEngine withBehaviors:performModifications:] + 150
+	22  Foundation                          0x0284e5cf -[NSISEngine withAutomaticOptimizationDisabled:] + 48
+	23  UIKit                               0x00e3912b -[UIView(AdditionalLayoutSupport) _withAutomaticEngineOptimizationDisabledIfEngineExists:] + 64
+	24  UIKit                               0x00e38a2e __57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke + 482
+	25  UIKit                               0x00e39133 -[UIView(AdditionalLayoutSupport) _withAutomaticEngineOptimizationDisabledIfEngineExists:] + 72
+	26  UIKit                               0x00e38823 -[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:] + 216
+	27  UIKit                               0x0075cfd6 -[UIScrollView _switchToLayoutEngine:] + 78
+	28  UIKit                               0x00e38746 -[UIView(AdditionalLayoutSupport) _parentalLayoutEngineDidChangeTo:] + 57
+	29  UIKit                               0x00e38b36 __57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke_2 + 241
+	30  Foundation                          0x0284b077 -[NSISEngine withBehaviors:performModifications:] + 150
+	31  Foundation                          0x0284e5cf -[NSISEngine withAutomaticOptimizationDisabled:] + 48
+	32  UIKit                               0x00e3912b -[UIView(AdditionalLayoutSupport) _withAutomaticEngineOptimizationDisabledIfEngineExists:] + 64
+	33  UIKit                               0x00e38a2e __57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke + 482
+	34  UIKit                               0x00e39133 -[UIView(AdditionalLayoutSupport) _withAutomaticEngineOptimizationDisabledIfEngineExists:] + 72
+	35  UIKit                               0x00e38823 -[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:] + 216
+	36  UIKit                               0x00e38746 -[UIView(AdditionalLayoutSupport) _parentalLayoutEngineDidChangeTo:] + 57
+	37  UIKit                               0x00e38b36 __57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke_2 + 241
+	38  Foundation                          0x0284b077 -[NSISEngine withBehaviors:performModifications:] + 150
+	39  Foundation                          0x0284e5cf -[NSISEngine withAutomaticOptimizationDisabled:] + 48
+	40  UIKit                               0x00e3912b -[UIView(AdditionalLayoutSupport) _withAutomaticEngineOptimizationDisabledIfEngineExists:] + 64
+	41  UIKit                               0x00e38a2e __57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke + 482
+	42  UIKit                               0x00e39133 -[UIView(AdditionalLayoutSupport) _withAutomaticEngineOptimizationDisabledIfEngineExists:] + 72
+	43  UIKit                               0x00e38823 -[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:] + 216
+	44  UIKit                               0x00e38746 -[UIView(AdditionalLayoutSupport) _parentalLayoutEngineDidChangeTo:] + 57
+	45  UIKit                               0x00e38b36 __57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke_2 + 241
+	46  Foundation                          0x0284b077 -[NSISEngine withBehaviors:performModifications:] + 150
+	47  Foundation                          0x0284e5cf -[NSISEngine withAutomaticOptimizationDisabled:] + 48
+	48  UIKit                               0x00e3912b -[UIView(AdditionalLayoutSupport) _withAutomaticEngineOptimizationDisabledIfEngineExists:] + 64
+	49  UIKit                               0x00e38a2e __57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke + 482
+	50  UIKit                               0x00e39133 -[UIView(AdditionalLayoutSupport) _withAutomaticEngineOptimizationDisabledIfEngineExists:] + 72
+	51  UIKit                               0x00e38823 -[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:] + 216
+	52  UIKit                               0x00e38746 -[UIView(AdditionalLayoutSupport) _parentalLayoutEngineDidChangeTo:] + 57
+	53  UIKit                               0x00e38b36 __57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke_2 + 241
+	54  Foundation                          0x0284b077 -[NSISEngine withBehaviors:performModifications:] + 150
+	55  Foundation                          0x0284e5cf -[NSISEngine withAutomaticOptimizationDisabled:] + 48
+	56  UIKit                               0x00e3912b -[UIView(AdditionalLayoutSupport) _withAutomaticEngineOptimizationDisabledIfEngineExists:] + 64
+	57  UIKit                               0x00e38a2e __57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke + 482
+	58  UIKit                               0x00e39133 -[UIView(AdditionalLayoutSupport) _withAutomaticEngineOptimizationDisabledIfEngineExists:] + 72
+	59  UIKit                               0x00e38823 -[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:] + 216
+	60  UIKit                               0x0074500d __40-[UIView(Hierarchy) layoutBelowIfNeeded]_block_invoke + 46
+	61  Foundation                          0x0284b077 -[NSISEngine withBehaviors:performModifications:] + 150
+	62  Foundation                          0x0284e5cf -[NSISEngine withAutomaticOptimizationDisabled:] + 48
+	63  UIKit                               0x00744de2 -[UIView(Hierarchy) layoutBelowIfNeeded] + 364
+	64  UIKit                               0x00744c61 -[UIView(Hierarchy) layoutIfNeeded] + 83
+	65  UIKit                               0x00b680cd -[_UIAlertControllerAnimatedTransitioning animateTransition:] + 588
+	66  UIKit                               0x007fca8c __56-[UIPresentationController runTransitionForCurrentState]_block_invoke + 2315
+	67  UIKit                               0x0083131b __40+[UIViewController _scheduleTransition:]_block_invoke + 18
+	68  UIKit                               0x006ea862 ___afterCACommitHandler_block_invoke + 15
+	69  UIKit                               0x006ea80d _applyBlockToCFArrayCopiedToStack + 415
+	70  UIKit                               0x006ea622 _afterCACommitHandler + 549
+	71  CoreFoundation                      0x0022286e __CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__ + 30
+	72  CoreFoundation                      0x002227b0 __CFRunLoopDoObservers + 400
+	73  CoreFoundation                      0x002181ea __CFRunLoopRun + 1226
+	74  CoreFoundation                      0x00217a5b CFRunLoopRunSpecific + 443
+	75  CoreFoundation                      0x0021788b CFRunLoopRunInMode + 123
+	76  GraphicsServices                    0x041fb2c9 GSEventRunModal + 192
+	77  GraphicsServices                    0x041fb106 GSEventRun + 104
+	78  UIKit                               0x006c0106 UIApplicationMain + 1526
+	79  JSPDF App                           0x000ccb79 main + 89
+	80  libdyld.dylib                       0x03330ac9 start + 1
+)
+libc++abi.dylib: terminating with uncaught exception of type NSException
+2015-04-27 16:29:23.533 JSPDF App[7528:563285] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Data/Application/049BDB8D-DFD9-4538-A388-D5521A50982D/Library/Cookies/Cookies.binarycookies
+2015-04-27 16:29:23.621 JSPDF App[7528:563285] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-27 16:29:23.622 JSPDF App[7528:563285] Multi-tasking -> Device: YES, App: YES
+2015-04-27 16:29:23.624 JSPDF App[7528:563285] Unlimited access to network resources
+2015-04-27 16:29:23.627 JSPDF App[7528:563285] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-27 16:29:23.722 JSPDF App[7528:563285] [CDVTimer][file] 6.205976ms
+2015-04-27 16:29:23.723 JSPDF App[7528:563285] [CDVTimer][TotalPluginStartup] 6.507039ms
+2015-04-27 16:29:23.828 JSPDF App[7528:563285] Resetting plugins due to page load.
+2015-04-27 16:29:24.105 JSPDF App[7528:563285] Finished load of: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Bundle/Application/793DC1B0-5F13-41C2-918B-5BA57E6CCB56/JSPDF%20App.app/www/index.html
+2015-04-27 16:30:30.870 JSPDF App[7823:564740] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Data/Application/F7AB3A67-E8F5-42DD-A9C8-77C0A504A4DD/Library/Cookies/Cookies.binarycookies
+2015-04-27 16:30:30.969 JSPDF App[7823:564740] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-27 16:30:30.970 JSPDF App[7823:564740] Multi-tasking -> Device: YES, App: YES
+2015-04-27 16:30:30.972 JSPDF App[7823:564740] Unlimited access to network resources
+2015-04-27 16:30:30.976 JSPDF App[7823:564740] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-27 16:30:31.086 JSPDF App[7823:564740] [CDVTimer][file] 3.948033ms
+2015-04-27 16:30:31.086 JSPDF App[7823:564740] [CDVTimer][TotalPluginStartup] 4.177988ms
+2015-04-27 16:30:31.190 JSPDF App[7823:564740] Resetting plugins due to page load.
+2015-04-27 16:30:31.478 JSPDF App[7823:564740] Finished load of: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Bundle/Application/83525141-76A8-44E8-BCE2-26B3E03E077B/JSPDF%20App.app/www/index.html
+2015-04-27 16:31:12.667 JSPDF App[8109:565670] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Data/Application/62135653-CF18-4858-BBAA-52C1E6F7B3AE/Library/Cookies/Cookies.binarycookies
+2015-04-27 16:31:12.756 JSPDF App[8109:565670] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-27 16:31:12.757 JSPDF App[8109:565670] Multi-tasking -> Device: YES, App: YES
+2015-04-27 16:31:12.759 JSPDF App[8109:565670] Unlimited access to network resources
+2015-04-27 16:31:12.763 JSPDF App[8109:565670] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-27 16:31:12.863 JSPDF App[8109:565670] [CDVTimer][file] 3.338039ms
+2015-04-27 16:31:12.863 JSPDF App[8109:565670] [CDVTimer][TotalPluginStartup] 3.557980ms
+2015-04-27 16:31:12.940 JSPDF App[8109:565670] Resetting plugins due to page load.
+2015-04-27 16:31:13.242 JSPDF App[8109:565670] Finished load of: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Bundle/Application/344E5C7C-13DD-4B65-ADB8-936048A9C1DB/JSPDF%20App.app/www/index.html
+2015-04-27 16:35:11.305 JSPDF App[8415:569304] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Data/Application/84DE02A4-7C70-45E9-897D-4E7EA560DC5F/Library/Cookies/Cookies.binarycookies
+2015-04-27 16:35:11.381 JSPDF App[8415:569304] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-27 16:35:11.381 JSPDF App[8415:569304] Multi-tasking -> Device: YES, App: YES
+2015-04-27 16:35:11.383 JSPDF App[8415:569304] Unlimited access to network resources
+2015-04-27 16:35:11.387 JSPDF App[8415:569304] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-27 16:35:11.480 JSPDF App[8415:569304] [CDVTimer][file] 2.912045ms
+2015-04-27 16:35:11.480 JSPDF App[8415:569304] [CDVTimer][TotalPluginStartup] 3.111005ms
+2015-04-27 16:35:11.546 JSPDF App[8415:569304] Resetting plugins due to page load.
+2015-04-27 16:35:11.866 JSPDF App[8415:569304] Finished load of: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Bundle/Application/151A05D5-C13D-40A9-8F5D-E066228536B7/JSPDF%20App.app/www/index.html
+2015-04-27 16:35:32.159 JSPDF App[8415:569664] Camera.getPicture: source type 1 not available.
+2015-04-27 16:35:37.115 JSPDF App[8415:569664] Camera.getPicture: source type 1 not available.
+2015-04-27 16:38:18.266 JSPDF App[8736:571277] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Data/Application/016E485E-AA00-41E1-B639-F6D391D990AC/Library/Cookies/Cookies.binarycookies
+2015-04-27 16:38:18.370 JSPDF App[8736:571277] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-27 16:38:18.370 JSPDF App[8736:571277] Multi-tasking -> Device: YES, App: YES
+2015-04-27 16:38:18.373 JSPDF App[8736:571277] Unlimited access to network resources
+2015-04-27 16:38:18.376 JSPDF App[8736:571277] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-27 16:38:18.471 JSPDF App[8736:571277] [CDVTimer][file] 3.714979ms
+2015-04-27 16:38:18.471 JSPDF App[8736:571277] [CDVTimer][TotalPluginStartup] 4.041016ms
+2015-04-27 16:38:18.552 JSPDF App[8736:571277] Resetting plugins due to page load.
+2015-04-27 16:38:18.858 JSPDF App[8736:571277] Finished load of: file:///Users/jlancaster/Library/Developer/CoreSimulator/Devices/BE24F958-A20C-4EAB-8824-BC3A1B85F557/data/Containers/Bundle/Application/BE07E995-CF71-45CD-8DEA-AAFEABCE57A7/JSPDF%20App.app/www/index.html
