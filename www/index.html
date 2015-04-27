@@ -91,7 +91,9 @@
     // current GPS coordinates
     //
     var onSuccess = function(position) {
-    console.log('Latitude: '          + position.coords.latitude          + '\n' +
+      var loc = document.getElementByID('currentLocation');
+
+      loc.innerHTML('Latitude: '          + position.coords.latitude          + '\n' +
               'Longitude: '         + position.coords.longitude         + '\n' +
               'Altitude: '          + position.coords.altitude          + '\n' +
               'Accuracy: '          + position.coords.accuracy          + '\n' +
@@ -104,7 +106,9 @@
     // onError Callback receives a PositionError object
     //
     function onError(error) {
-    console.log('code: '    + error.code    + '\n' +
+      var loc = document.getElementByID('currentLocation');
+
+      loc.innerHTML('code: '    + error.code    + '\n' +
               'message: ' + error.message + '\n');
     }
 
@@ -234,6 +238,7 @@
           <button class="button" onclick="getCurrentLocation();">
             Get Current Location
           </button>
+          <label id="currentLocation"></label>
         </ons-col>
       </ons-row>
 
