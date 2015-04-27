@@ -84,6 +84,34 @@
       background-color: rgba(255, 255, 255, 0.1);
     }
   </style>
+
+  <script type="text/javascript">
+    // onSuccess Callback
+    // This method accepts a Position object, which contains the
+    // current GPS coordinates
+    //
+    var onSuccess = function(position) {
+    console.log('Latitude: '          + position.coords.latitude          + '\n' +
+              'Longitude: '         + position.coords.longitude         + '\n' +
+              'Altitude: '          + position.coords.altitude          + '\n' +
+              'Accuracy: '          + position.coords.accuracy          + '\n' +
+              'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+              'Heading: '           + position.coords.heading           + '\n' +
+              'Speed: '             + position.coords.speed             + '\n' +
+              'Timestamp: '         + position.timestamp                + '\n');
+    };
+
+    // onError Callback receives a PositionError object
+    //
+    function onError(error) {
+    console.log('code: '    + error.code    + '\n' +
+              'message: ' + error.message + '\n');
+    }
+
+    function getCurrentLocation() {
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    }
+  </script>
   
 </head>
 
@@ -147,7 +175,9 @@
 
       <ons-row style="margin-top: 100px; text-align: center;">
         <ons-col>
-          
+          <button class="button" onclick="generatePdf();">
+            Generate PDF
+          </button>
         </ons-col>
       </ons-row>
     </ons-page>
@@ -167,18 +197,18 @@
 
       <ons-row style="margin-top: 100px; text-align: center;">
         <ons-col>
-          <ons-button modifier="light" ng-click="capturePhotoWithData();">
+          <button class="button" onclick="capturePhotoWithData();">
             Capture Photo With Image Data
-          </ons-button><br />
-          <ons-button modifier="light" ng-click="capturePhotoWithFile();">
+          </button><br />
+          <button class="button" onclick="capturePhotoWithFile();">
             Capture Photo With Image File URI
-          </ons-button><br />
-          <ons-button modifier="light" ng-click="getPhoto(pictureSource.PHOTOLIBRARY);">
+          </button><br />
+          <button class="button" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">
             From Photo Library
-          </ons-button><br />
-          <ons-button modifier="light" ng-click="getPhoto(pictureSource.SAVEDPHOTOALBUM);">
+          </button><br />
+          <button class="button" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">
             From Photo Album
-          </ons-button><br />
+          </button><br />
           <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
           <img style="display:none;" id="largeImage" src="" />
         </ons-col>
@@ -201,9 +231,9 @@
 
       <ons-row style="margin-top: 100px; text-align: center;">
         <ons-col>
-          <ons-button modifier="light" ng-click="getCurrentLocation();">
+          <button class="button" onclick="getCurrentLocation();">
             Get Current Location
-          </ons-button>
+          </button>
         </ons-col>
       </ons-row>
 

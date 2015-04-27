@@ -34,6 +34,7 @@
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
     	app.receivedEvent('deviceready');
+        function generatePdf() {
 		   //FIRST GENERATE THE PDF DOCUMENT
 		   console.dir("generating pdf...");
 
@@ -80,13 +81,9 @@
 		   function(event){
 		   	console.dir( evt.target.error.code );
 		   });
-    
+    }
             var pictureSource;   // picture source
             var destinationType; // sets the format of returned value 
-
-            // Wait for PhoneGap to connect with the device
-            //
-            document.addEventListener("deviceready",onDeviceReady,false);
 
             // PhoneGap is ready to be used!
             //
@@ -178,31 +175,7 @@
               alert('Failed because: ' + message);
           }
 
-          // onSuccess Callback
-            // This method accepts a Position object, which contains the
-            // current GPS coordinates
-            //
-            var onSuccess = function(position) {
-                alert('Latitude: '          + position.coords.latitude          + '\n' +
-                      'Longitude: '         + position.coords.longitude         + '\n' +
-                      'Altitude: '          + position.coords.altitude          + '\n' +
-                      'Accuracy: '          + position.coords.accuracy          + '\n' +
-                      'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
-                      'Heading: '           + position.coords.heading           + '\n' +
-                      'Speed: '             + position.coords.speed             + '\n' +
-                      'Timestamp: '         + position.timestamp                + '\n');
-            };
-
-            // onError Callback receives a PositionError object
-            //
-            function onError(error) {
-                alert('code: '    + error.code    + '\n' +
-                      'message: ' + error.message + '\n');
-            }
-
-            function getCurrentLocation() {
-                navigator.geolocation.getCurrentPosition(onSuccess, onError);
-            }
+          
         
 },
     // Update DOM on a Received Event
