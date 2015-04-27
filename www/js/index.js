@@ -62,7 +62,6 @@
 		   		entry.createWriter(function(writer) {
 		   			writer.onwrite = function(evt) {
 		   				console.dir("write success");
-
 		   				console.dir("opening the file");
 		   				window.open(entry.toURL(), '_blank', 'location=no,closebuttoncaption=Close,enableViewportScale=yes');
 		   				console.dir("should have openned file...maybe");
@@ -81,6 +80,130 @@
 		   function(event){
 		   	console.dir( evt.target.error.code );
 		   });
+    
+            var pictureSource;   // picture source
+            var destinationType; // sets the format of returned value 
+
+            // Wait for PhoneGap to connect with the device
+            //
+            document.addEventListener("deviceready",onDeviceReady,false);
+
+            // PhoneGap is ready to be used!
+            //
+            function onDeviceReady() {
+                pictureSource=navigator.camera.PictureSourceType;
+                destinationType=navigator.camera.DestinationType;
+            }
+
+            // Called when a photo is successfully retrieved
+            //
+            function onPhotoDataSuccess(imageData) {
+              // Get image handle
+              //
+              var smallImage = document.getElementById('smallImage');
+
+              // Unhide image elements
+              //
+              smallImage.style.display = 'block';
+
+              // Show the captured photo
+              // The inline CSS rules are used to resize the image
+              //
+              smallImage.src = "data:image/jpeg;base64," + imageData;
+          }
+
+            // Called when a photo is successfully retrieved
+            //
+            function onPhotoFileSuccess(imageData) {
+              // Get image handle
+              console.log(JSON.stringify(imageData));
+              
+              // Get image handle
+              //
+              var smallImage = document.getElementById('smallImage');
+
+              // Unhide image elements
+              //
+              smallImage.style.display = 'block';
+
+              // Show the captured photo
+              // The inline CSS rules are used to resize the image
+              //
+              smallImage.src = imageData;
+          }
+
+            // Called when a photo is successfully retrieved
+            //
+            function onPhotoURISuccess(imageURI) {
+              // Uncomment to view the image file URI 
+              // console.log(imageURI);
+
+              // Get image handle
+              //
+              var largeImage = document.getElementById('largeImage');
+
+              // Unhide image elements
+              //
+              largeImage.style.display = 'block';
+
+              // Show the captured photo
+              // The inline CSS rules are used to resize the image
+              //
+              largeImage.src = imageURI;
+          }
+
+            // A button will call this function
+            //
+            function capturePhotoWithData() {
+              // Take picture using device camera and retrieve image as base64-encoded string
+              navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50 });
+          }
+
+          function capturePhotoWithFile() {
+            navigator.camera.getPicture(onPhotoFileSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
+        }
+
+            // A button will call this function
+            //
+            function getPhoto(source) {
+              // Retrieve image file location from specified source
+              navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50, 
+                destinationType: destinationType.FILE_URI,
+                sourceType: source });
+          }
+
+            // Called if something bad happens.
+            // 
+            function onFail(message) {
+              alert('Failed because: ' + message);
+          }
+
+          // onSuccess Callback
+            // This method accepts a Position object, which contains the
+            // current GPS coordinates
+            //
+            var onSuccess = function(position) {
+                alert('Latitude: '          + position.coords.latitude          + '\n' +
+                      'Longitude: '         + position.coords.longitude         + '\n' +
+                      'Altitude: '          + position.coords.altitude          + '\n' +
+                      'Accuracy: '          + position.coords.accuracy          + '\n' +
+                      'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+                      'Heading: '           + position.coords.heading           + '\n' +
+                      'Speed: '             + position.coords.speed             + '\n' +
+                      'Timestamp: '         + position.timestamp                + '\n');
+            };
+
+            // onError Callback receives a PositionError object
+            //
+            function onError(error) {
+                alert('code: '    + error.code    + '\n' +
+                      'message: ' + error.message + '\n');
+            }
+
+            function getCurrentLocation() {
+                navigator.geolocation.getCurrentPosition(onSuccess, onError);
+            }
+        
 },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

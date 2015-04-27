@@ -1,151 +1,214 @@
-<!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
-
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
+<!doctype html>
+<html lang="en" ng-app="app">
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <script type="text/javascript" src="js/jspdf.min.js"></script>
-    <script type="text/javascript">
-            var pictureSource;   // picture source
-            var destinationType; // sets the format of returned value 
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>PhoneGap Prototype</title>  
+  
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
+  <link rel="stylesheet" href="styles/onsen-css-components-blue-basic-theme.css">  
+  <link rel="stylesheet" href="styles/app.css"/>
 
-            // Wait for PhoneGap to connect with the device
-            //
-            document.addEventListener("deviceready",onDeviceReady,false);
+  <script type="text/javascript" src="js/jspdf.min.js"></script>
+  <script src="lib/onsen/js/angular/angular.js"></script>    
+  <script src="lib/onsen/js/onsenui.js"></script>    
 
-            // PhoneGap is ready to be used!
-            //
-            function onDeviceReady() {
-                pictureSource=navigator.camera.PictureSourceType;
-                destinationType=navigator.camera.DestinationType;
-            }
+  <script src="cordova.js"></script>
 
-            // Called when a photo is successfully retrieved
-            //
-            function onPhotoDataSuccess(imageData) {
-              // Get image handle
-              //
-              var smallImage = document.getElementById('smallImage');
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+    app.initialize();
+  </script>
 
-              // Unhide image elements
-              //
-              smallImage.style.display = 'block';
+  <script>
+    var module = angular.module('app', ['onsen']);
+  </script>
 
-              // Show the captured photo
-              // The inline CSS rules are used to resize the image
-              //
-              smallImage.src = "data:image/jpeg;base64," + imageData;
-          }
+  <style>
+    .page--menu-page__background {
+      background-color: #333;
+    }
+    
+    .page--menu-page__content {
+      color: white;
+    }
 
-            // Called when a photo is successfully retrieved
-            //
-            function onPhotoFileSuccess(imageData) {
-              // Get image handle
-              console.log(JSON.stringify(imageData));
-              
-              // Get image handle
-              //
-              var smallImage = document.getElementById('smallImage');
+    .menu-close,
+    .menu-close > .toolbar-button {
+      color: #999;
+    }
 
-              // Unhide image elements
-              //
-              smallImage.style.display = 'block';
+    .menu-list,
+    .menu-item:first-child,
+    .menu-item:last-child,
+    .menu-item {
+      background-color: transparent;
+      background-image: none !important;
+      border-color: transparent;
+      color: #fff;
+    }
 
-              // Show the captured photo
-              // The inline CSS rules are used to resize the image
-              //
-              smallImage.src = imageData;
-          }
+    .menu-item {
+      padding: 0 0 0 20px;
+      line-height: 52px;
+      height: 52px;
+      text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
+    }
 
-            // Called when a photo is successfully retrieved
-            //
-            function onPhotoURISuccess(imageURI) {
-              // Uncomment to view the image file URI 
-              // console.log(imageURI);
+    .menu-item:active {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
 
-              // Get image handle
-              //
-              var largeImage = document.getElementById('largeImage');
+    .menu-notification {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 14px;
+      height: 16px;
+      line-height: 16px;
+      min-width: 16px;
+      font-weight: 600;
+    }
 
-              // Unhide image elements
-              //
-              largeImage.style.display = 'block';
+    .bottom-menu-list,
+    .bottom-menu-item:first-child,
+    .bottom-menu-item:last-child,
+    .bottom-menu-item {
+      border-color: #393939;
+      background-color: transparent;
+      background-image: none !important;
+      color: #ccc;
+    }
 
-              // Show the captured photo
-              // The inline CSS rules are used to resize the image
-              //
-              largeImage.src = imageURI;
-          }
+    .bottom-menu-item:active {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  </style>
+  
+</head>
 
-            // A button will call this function
-            //
-            function capturePhotoWithData() {
-              // Take picture using device camera and retrieve image as base64-encoded string
-              navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50 });
-          }
+<body>    
+  
+  <ons-sliding-menu
+    menu-page="menu.html" main-page="page1.html" side="left"
+    var="menu" type="reveal" max-slide-distance="260px" swipeable="true">
+  </ons-sliding-menu>
 
-          function capturePhotoWithFile() {
-            navigator.camera.getPicture(onPhotoFileSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
-        }
+  <ons-template id="menu.html">
+    <ons-page modifier="menu-page">
+      <ons-toolbar modifier="transparent"></ons-toolbar>
 
-            // A button will call this function
-            //
-            function getPhoto(source) {
-              // Retrieve image file location from specified source
-              navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50, 
-                destinationType: destinationType.FILE_URI,
-                sourceType: source });
-          }
+      <ons-list class="menu-list">
+        <ons-list-item class="menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})">
+          <ons-icon icon="fa-file-pdf-o" fixed-width="true"></ons-icon>
+          Generate PDF
+        </ons-list-item>
 
-            // Called if something bad happens.
-            // 
-            function onFail(message) {
-              alert('Failed because: ' + message);
-          }
-          </script>
-          <title>Hello World</title>
-      </head>
-      <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-            <button onclick="capturePhotoWithData();">Capture Photo With Image Data</button> <br>
-            <button onclick="capturePhotoWithFile();">Capture Photo With Image File URI</button> <br>
-            <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
-            <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
-            <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
-            <img style="display:none;" id="largeImage" src="" />
+        <ons-list-item class="menu-item" ng-click="menu.setMainPage('page2.html', {closeMenu: true})">
+          <ons-icon icon="fa-camera" fixed-width="true"></ons-icon>
+          Show Photo Interchange
+        </ons-list-item>
+
+        <ons-list-item class="menu-item" ng-click="menu.setMainPage('page3.html', {closeMenu: true})">
+          <ons-icon icon="fa-map-marker" fixed-width="true"></ons-icon>
+          Get Location
+        </ons-list-item>
+      </ons-list>
+
+      <br>
+
+      <ons-list class="bottom-menu-list">
+        <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('page2.html', {closeMenu: true})">
+          Settings
+          <div class="notification menu-notification">3</div>
+        </ons-list-item>
+
+        <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})">
+          Help
+        </ons-list-item>
+
+        <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('page2.html', {closeMenu: true})">
+          Send feedback
+        </ons-list-item>
+      </ons-list>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="page1.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="menu.toggle()">
+            <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+          </ons-toolbar-button>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-        app.initialize();
-        </script>
-    </body>
-    </html>
+        <div class="center">Generate PDF</div>
+      </ons-toolbar>
+
+      <ons-row style="margin-top: 100px; text-align: center;">
+        <ons-col>
+          
+        </ons-col>
+      </ons-row>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="page2.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="menu.toggle()">
+            <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">Camera Functions</div>
+      </ons-toolbar>
+
+
+      <ons-row style="margin-top: 100px; text-align: center;">
+        <ons-col>
+          <ons-button modifier="light" ng-click="capturePhotoWithData();">
+            Capture Photo With Image Data
+          </ons-button><br />
+          <ons-button modifier="light" ng-click="capturePhotoWithFile();">
+            Capture Photo With Image File URI
+          </ons-button><br />
+          <ons-button modifier="light" ng-click="getPhoto(pictureSource.PHOTOLIBRARY);">
+            From Photo Library
+          </ons-button><br />
+          <ons-button modifier="light" ng-click="getPhoto(pictureSource.SAVEDPHOTOALBUM);">
+            From Photo Album
+          </ons-button><br />
+          <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+          <img style="display:none;" id="largeImage" src="" />
+        </ons-col>
+      </ons-row>
+
+    </ons-page>
+  </ons-template>
+ 
+  <ons-template id="page3.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="menu.toggle()">
+            <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">Current Location</div>
+      </ons-toolbar>
+
+
+      <ons-row style="margin-top: 100px; text-align: center;">
+        <ons-col>
+          <ons-button modifier="light" ng-click="getCurrentLocation();">
+            Get Current Location
+          </ons-button>
+        </ons-col>
+      </ons-row>
+
+    </ons-page>
+  </ons-template>
+
+</body>
+</html>
